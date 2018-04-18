@@ -15,15 +15,7 @@ import java.util.HashSet;
  * @author alu20908719v
  */
 public class Product {
-	/**
-	 * Description of the property suplierName.
-	 */
-	private String suplierName = "";
-
-	/**
-	 * Description of the property suplierID.
-	 */
-	private String suplierID = "";
+	private ProductSuplier suplierProduct = new ProductSuplier("", "");
 
 	/**
 	 * Description of the property price.
@@ -66,37 +58,7 @@ public class Product {
 	// Start of user code (user defined methods for Product)
 
 	// End of user code
-	/**
-	 * Returns suplierName.
-	 * @return suplierName 
-	 */
-	public String getSuplierName() {
-		return this.suplierName;
-	}
-
-	/**
-	 * Sets a value to attribute suplierName. 
-	 * @param newSuplierName 
-	 */
-	public void setSuplierName(String newSuplierName) {
-		this.suplierName = newSuplierName;
-	}
-
-	/**
-	 * Returns suplierID.
-	 * @return suplierID 
-	 */
-	public String getSuplierID() {
-		return this.suplierID;
-	}
-
-	/**
-	 * Sets a value to attribute suplierID. 
-	 * @param newSuplierID 
-	 */
-	public void setSuplierID(String newSuplierID) {
-		this.suplierID = newSuplierID;
-	}
+	
 
 	/**
 	 * Returns price.
