@@ -148,5 +148,13 @@ public class Invoice {
 	public void setClients(Client newClients) {
 		this.clients = newClients;
 	}
+	private void calculateTotalInvoiceAmount() {
+		double amount=0;
+		for(InvoiceLine line: invoiceLines) {
+			amount+=line.getInvoiceLineAmount();
+		}
+		this.totalAmount=amount;
+		
+	}
 
 }
