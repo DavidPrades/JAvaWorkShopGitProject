@@ -13,6 +13,8 @@ package main.workshopgitproject.classes;
  * @author alu20908719v
  */
 public class InvoiceLine {
+	private static final int _base = 1;
+
 	/**
 	 * Description of the property invoiceLineAmount.
 	 */
@@ -133,9 +135,10 @@ public class InvoiceLine {
 	public void setQuantity(int newQuantity) {
 		this.quantity = newQuantity;
 	}
-	private void calculateInvoiceLineAmount() {
+	private void calculateTotalInvoiceLineAmount(Double present) {
 		double amount=0;
-		amount=this.quantity*products.getPrice();
+		double vat = 0.21;
+		amount=this.quantity*products.getPrice()*(_base+vat);
 		this.invoiceLineAmount=amount;
 	}
 

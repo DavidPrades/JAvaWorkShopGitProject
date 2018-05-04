@@ -135,6 +135,10 @@ public class Client {
 		this.surname = newSurname;
 	}
 
+	public void shutDown() {
+		System.out.println("Thanks for using application");
+	}
+
 	
 
 }
